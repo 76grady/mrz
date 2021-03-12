@@ -44,6 +44,9 @@ String identifying the format of the parsed MRZ. Supported formats are:
 - TD3 (passport)
 - SWISS_DRIVING_LICENSE
 - FRENCH_NATIONAL_ID
+- MRV-A (visa with 44 characters per line)
+- MRV-B (visa with 36 characters per line)
+
 
 #### result.valid
 
@@ -79,7 +82,7 @@ Static mapping of state code to state name.
 
 ## Specifications
 
-### TD1, TD2 and TD3
+### TD1, TD2, TD3, MRV-A and MRV-B
 
 https://www.icao.int/publications/pages/publication.aspx?docnum=9303
 
