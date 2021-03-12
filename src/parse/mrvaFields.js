@@ -103,8 +103,8 @@ module.exports = [
     ],
   }),
   {
-    label: 'Optional data',
-    field: 'optionalData',
+    label: 'Optional',
+    field: 'optional',
     line: 1,
     start: 28,
     end: 44,
