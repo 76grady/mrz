@@ -30,15 +30,13 @@ describe('parse MRV-A', () => {
       birthDate: '690806',
       birthDateCheckDigit: '1',
       issuingState: null,
-      optionalData: 'ZE184226B',
+      optional: 'ZE184226B',
     });
 
-    const optionalDataDetails = result.details.find(
-      (d) => d.field === 'optionalData',
-    );
-    expect(optionalDataDetails).toStrictEqual({
-      label: 'Optional data',
-      field: 'optionalData',
+    const optionalDetails = result.details.find((d) => d.field === 'optional');
+    expect(optionalDetails).toStrictEqual({
+      label: 'Optional',
+      field: 'optional',
       value: 'ZE184226B',
       valid: true,
       ranges: [{ line: 1, start: 28, end: 44, raw: 'ZE184226B<<<<<<<' }],
@@ -81,15 +79,13 @@ describe('parse MRV-A', () => {
       sex: 'male',
       expirationDate: '150611',
       expirationDateCheckDigit: '8',
-      optionalData: '08',
+      optional: '08',
     });
 
-    const optionalDataDetails = result.details.find(
-      (d) => d.field === 'optionalData',
-    );
-    expect(optionalDataDetails).toStrictEqual({
-      label: 'Optional data',
-      field: 'optionalData',
+    const optionalDetails = result.details.find((d) => d.field === 'optional');
+    expect(optionalDetails).toStrictEqual({
+      label: 'Optional',
+      field: 'optional',
       value: '08',
       valid: true,
       ranges: [{ line: 1, start: 28, end: 44, raw: '08<<<<<<<<<<<<<<' }],
